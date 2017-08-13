@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "messages.proto";
+package com.hualala.remoting.grpc;
+option java_multiple_files = true;
+
+service RemotingService {
+    rpc execute (RemoteInvocationRequest) returns (RemoteInvocationResponse) {}
+}
